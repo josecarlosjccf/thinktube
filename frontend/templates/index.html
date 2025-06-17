@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ThinkTube - Resumidor de Vídeos</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ThinkTube</h1>
+        <p>Resuma vídeos do YouTube com um clique</p>
+        <form method="post">
+            <label for="youtube_url">URL do vídeo:</label>
+            <input type="url" id="youtube_url" name="youtube_url" required placeholder="https://www.youtube.com/watch?v=...">
+            <button type="submit">Resumir</button>
+        </form>
+        {% if summary %}
+            <div class="summary">
+                <h2>Resumo:</h2>
+                <p>{{ summary }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
