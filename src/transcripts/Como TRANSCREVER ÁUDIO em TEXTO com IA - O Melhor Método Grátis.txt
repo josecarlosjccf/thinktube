@@ -1,0 +1,119 @@
+pessoal, esse aqui é um dos melhores métodos para você transcrever qualquer tipo de áudio, inclusive, lá do WhatsApp, em texto olha só que dica bacana utilizando inteligência artificial então, bora lá para o vídeo então vamos lá pessoal, vamos aqui no navegador no Google, lembrando que todos os links estão aqui na descrição do vídeo e vamos aqui abrir o Google Drive lembrando que você precisa estar logado numa conta Google ok, vamos abrir ele aqui, chute bola, vamos lá primeiramente vamos ter que instalar uma extensão aqui dentro do Google Drive olha só como vai funcionar pessoal, vamos aqui em novo mais, você vai ver o que é o que é o conectar mais apps, e você vai pesquisar pela extensão com laboratório, vai ser esta extensão aqui pessoal, você clica nela e você clica aqui em instalar vamos continuar vai pedir aqui para você conectar sua conta Google nela, você conecta, vamos continuar e vamos continuar novamente caso pedir ok, aqui você aperta em ok e concluído simplesmente assim, tá pessoal, aqui podemos fechar e chute bola, vamos aqui em novo novamente vamos aqui em mais e vamos abrir a extensão da Google, vamos clicar aqui vai jogar aqui para essa página, caso seja sua primeira vez aguardo um pouquinho, que pode ser que ela demora um pouco, tá?
+
+ok, abriu, antes de nós fazer o processo você vem aqui em ambiente de execução aperta aqui em alterar o tipo de ambiente de execução ok, aqui você deixa no modelo de linguagem Python 3 e acelerador de hardware, você deixa no T4 GPU né?
+
+caso estiver bloqueado as opções, você deixa como está na CPU apenas deixa aqui em Python 3 ok, vamos salvar chute bola agora vamos instalar as dependências então vamos lá, você vai copiar lá no primeiro código os dois códigos, né?
+
+que eu deixei lá para vocês você vinha aqui nessa parte aqui, clica aqui dentro dessa caixa de mensagem e um controvê, né?
+
+o primeiro comando é para você instalar o isper, que vai ser essa inteligência artificial ou aqui para você utilizar para transcrever os audios, né?
+
+em texto aqui vai ver se vai ter um pideite de agumatilização e vai instalar o ffmpeg, tá?
+
+então, colou os dois comandinhos aqui, como está na descrição você aperta aqui em instalar, né?
+
+vai executar e vai começar a instalação aqui do isper então você aguardo um pouquinho aí pode ser que demora um pouco dependendo aí do seu computador, tá?
+
+e dependendo muito da sua internet, tá?
+
+então, aguardem um pouquinho aí que já vamos deixar para vocês aqui com no concluir e já quanto com o seu gostei, inscreva o canal, ative o ensininho aí, comente no vídeo e compartilhe um vídeo aí também que se ajuda muito engajamento do vídeo e do canal, ok?
+
+ok, pessoal, quando terminar, vai aparecer aqui, ó como conclusão, tá?
+
+Show de bola agora vamos clicar aqui nessa paixinha em arquivos e vamos arrastar o nosso arquivo de áudio aqui dentro, ok?
+
+vamos minimizar aqui antes de você arrastar, recomendo você renomear o seu arquivo, clica com botão direito do mouse renomear e coloque o nome bem simples, tá?
+
+sem espaços, sem caracteres e sem efem então vamos colocar aqui como o teste, apenas assim, tá pessoal?
+
+e você vai precisar saber o formato do seu áudio como meu áudio aqui em mp3, vocês podem ver a extensão dele aqui a odorize, pra mim não está aparecendo a extensão então você clica com botão direito do mouse, propriedades, aqui você vai ver qual é o formato do arquivo então ponto e mp3, show de bola agora vamos aqui segurar sobre ele, né?
+
+e vamos arrastar lá no colabe arrastou, vamos arrastar aqui dentro e você solta então, ok?
+
+aguarda um pouquinho fazer o pilódio, tá?
+
+então você aguarda aqui, ó é chegar até o final o pilódio, tá pessoal?
+
+ok?
+
+terminou?
+
+apareceu o arquivo aqui isso meu o pilódio dele, né?
+
+show de bola agora o que você tem que fazer?
+
+vamos clicar aqui, ó, em mais código e aqui vocês prestem bastante atenção, tá?
+
+vamos lá no segundo código que está lá no descrição do vídeo você copie ele todo vamos colar ele aqui e aqui dentro não tem as aspas duplas você está escrito o nome do arquivo aqui você vai pegar o nome do seu arquivo e colar aqui então, o nome do meu arquivo é teste ponto e mp3 como está aqui, ó, pessoal?
+
+clica com botão direito do mouse sobre ele renomear o arquivo e você vinha aqui, ó, e copia tudo contra o A, né?
+
+para selecionar, contra o C e aqui você vai renomear contra o V beleza?
+
+agora vamos clicar aqui, ó em executar ah, mas o do RIS meu arquivo tem outro formato não importa, tá pessoal?
+
+caso esteja em outro formato tipo Wav você vinha aqui em mudar para Wav, tá?
+
+vamos apertar aqui em executar vamos aguardar um pouquinho ele está detectando a linguagem olha só, linguagem português show e já está transcrevendo seu áudio em texto como vocês podem ver aqui, ó, pessoal?
+
+então, você aguarda aí até terminar olha só que loucura, pessoal e até que é rápido, tá?
+
+claro, vai depender muito do tamanho do seu áudio aqui é um áudio, acho que é de 8 minutos então, vamos aguardar um pouquinho aí ok, quando terminar, vai aparecer aqui como conclusão, tá?
+
+e um vezinho aqui de confirmação de que terminou olha só que bacana, é transcrevê o tudo, né, pessoal?
+
+você aguarda um pouquinho, quer ir vai criar outros tipos de arquivos aqui, ó como TXT e legendas e outros formatos de arquivos então, você aguarda um pouquinho e já criou aqui, ó, pessoal, olha só que bacana criou um arquivo JSON, um SRT, né?
+
+para você utilizar como legendas um TSV, um TXT e o VTT, tá?
+
+por exemplo, TXT vamos clicar aqui nos três pontinhos e fazer o download então, temos todo o nosso áudio transcrevê o pessoal muito legal, né, pessoal?
+
+caro, isso aqui é nos melhores métodos que eu achei aqui na internet vamos fechar aqui e tem um modo SRT olha só que bacana, vamos fazer o download o show, aqui está o nosso arquivo é SRT e olha igual, pessoal, que ele já deixa sincronizado junto com o seu vídeo esse aqui é o vídeo que nós utilizamos aqui para transcrever, né?
+
+então, vou jogar aqui, nosso alegenda e olha só que bacana, pessoal dá um play aqui então vamos lá, pessoal, para as melhores aplicativos de 2024 aqui para o seu celular bora lá, então vamos lá, o primeiro aplicativo é o flash dímico com ele você vai conseguir embarcar muito da hora, né, pessoal?
+
+aplicativo perfeito mesmo.
+
+Então vocês podem transcrever qualquer tipo de audio aí, tá?
+
+Até mesmo lá do seu WhatsApp.
+
+Ó, pessoal, vou fazer um outro teste aqui com vocês, com o arquivo do WhatsApp.
+
+Ó, joguei aqui ó, vai fazer o upload, né?
+
+Vamos clicar aqui no mais.
+
+Vamos inserir aquele código que eu mostrei pra vocês o segundo código.
+
+Colarei aqui ó, clica com botão direito do mouse sobre o arquivo, renomear, copia tudo.
+
+Ok, vamos colar aqui ó, agora ele é ponto ooggui, né?
+
+Show e aperta aqui em transcrever.
+
+Você aguarda o pouquinho?
+
+Ó, detectou a linguagem, português, show de bola e eu só falei isso aqui ó.
+
+Bem simples né, pessoal?
+
+Tá, eu dori isso, eu fechar, eu vou ter que fazer tudo novamente, sua configuração.
+
+Não pessoal, você vem aqui em cima em muda o nome do arquivo, antes do ponto, tá?
+
+Vamos colocar aqui ó, transcrição.
+
+Ok, aperta o contro-s pra salvar, salvo, né?
+
+Ou vem aqui em arquivo e salva, ou vocês podem salvar em outros lugares aqui também, tá?
+
+Só fazer isso aí ó, vamos se achar, show de bola, salvo, vamos aqui no meu drive e vai ter aqui ó, como transcrição.
+
+Basta você abrir ele novamente, vamos aguardar um pouquinho, ok?
+
+Vai estar tudo aqui ó, você aperta aqui na passinha e vai estar tudo aqui ó, tá, pessoal?
+
+Bem simples, então você não precisa fazer a configuração tudo novamente.
+
+Lembrando que os links e comandos estão todos aqui na descrição, espero que você tenha gostado e comente aí se deu certo, valeu, falou.
