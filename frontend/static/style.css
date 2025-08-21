@@ -37,4 +37,12 @@ button {
 .summary {
     margin-top: 2rem;
     text-align: left;
+    background: #f3f6fb;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.error {
+    color: red;
+    margin-top: 1rem;
 }
