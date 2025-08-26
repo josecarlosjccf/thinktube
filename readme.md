@@ -1,240 +1,94 @@
+<h1>ThinkTube</h1>
+<p>ThinkTube é uma aplicação colaborativa que permite gerar resumos automáticos de vídeos do YouTube. O sistema baixa o áudio do vídeo, transcreve o conteúdo falado e utiliza modelos de linguagem de código aberto para criar um resumo textual. Todo o fluxo é realizado com tecnologias gratuitas e open source, proporcionando praticidade e acessibilidade.</p>
 
-# ThinkTube
+<hr>
 
+<h2>✨ O que o ThinkTube faz?</h2>
+<ul>
+  <li>O usuário insere o link de um vídeo do YouTube.</li>
+  <li>O sistema faz o download do áudio do vídeo.</li>
+  <li>O áudio é transcrito automaticamente usando o modelo Whisper.</li>
+  <li>O texto transcrito é resumido utilizando modelos open source (como BART ou Pegasus).</li>
+  <li>O resumo é exibido de forma simples pelo frontend web.</li>
+</ul>
 
+<hr>
 
-ThinkTube é um aplicativo colaborativo que gera resumos automáticos de vídeos do YouTube. Ele funciona baixando o áudio, transcrevendo o conteúdo e utilizando **modelos de linguagem open-source** para criar um resumo textual. Todo o fluxo é 100% gratuito e open-source, garantindo acessibilidade e praticidade.
-
-
-
----
-
-
-
-## Como funciona?
-
-
-
--   Você insere o link de um vídeo do YouTube.
-
--   O sistema baixa o áudio do vídeo.
-
--   O áudio é transcrito automaticamente usando o modelo de IA **Whisper**.
-
--   A transcrição é resumida com modelos open-source (como BART ou Pegasus).
-
--   O resumo final é exibido na interface web.
-
-
-
----
-
-
-
-## Estrutura do Projeto
-
-
-
-```
-
-
-
-thinktube/
-
+<h2>📁 Estrutura de Pastas</h2>
+<pre><code>thinktube/
 ├── app/
-
-│   ├── main.py                  \# API principal (FastAPI)
-
+│   ├── main.py                  # Inicialização da API FastAPI e integração dos serviços
 │   └── services/
-
-│       ├── downloader.py        \# Baixa áudio do YouTube
-
-│       ├── transcriber.py       \# Transcreve o áudio
-
-│       └── summarizer.py        \# Resume o texto
-
-├── frontend/
-
-│   ├── templates/
-
-│   │   └── index.html           \# Página web principal
-
-│   └── static/
-
-│       └── style.css            \# Estilos CSS
-
+│       ├── transcriber.py       # Transcrição de áudio (Whisper)
+│       └── summarizer.py        # Resumo de texto (BART/Pegasus)
 ├── data/
-
-│   ├── downloads/               \# Áudios baixados
-
-│   ├── transcripts/             \# Transcrições
-
-│   └── summaries/               \# Resumos
-
-├── requirements.txt             \# Dependências Python
-
+│   ├── audio/                   # Áudios baixados
+│   └── summaries/               # Resumos gerados
+├── requirements.txt             # Dependências Python do projeto
 ├── README.md
-
-└── .gitignore
-
-
-
-````
-
-
-
----
-
-
-
-## Como executar
-
-
-
-### 1. Pré-requisitos
-
-
-
--   **Python 3.10+** (baixe [aqui](https://www.python.org/downloads/))
-
--   **ffmpeg** instalado.
-
-    -   **Linux (Ubuntu/Debian):**
-
-        ```
-
-        sudo apt update && sudo apt install ffmpeg -y
-
-        ```
-
-    -   **Windows:** Baixe o [FFmpeg](https://ffmpeg.org/download.html), extraia-o e adicione a pasta `bin` ao PATH do sistema.
-
-
-
-### 2. Configure o ambiente
-
-
-
-1.  Crie e ative um ambiente virtual no terminal:
-
-    ```
-
-    python -m venv venv
-
-    ```
-
-2.  Ative o ambiente virtual:
-
-    -   **Windows:**
-
-        ```
-
-        venv\Scripts\activate
-
-        ```
-
-    -   **Linux/Mac:**
-
-        ```
-
-        source venv/bin/activate
-
-        ```
-
-3.  Instale as dependências:
-
-    ```
-
-    pip install -r requirements.txt
-
-    ```
-
-
-
-### 3. Rode o ThinkTube
-
-
-
-Execute o servidor com o comando abaixo. O servidor estará disponível em **http://localhost:8000**.
-
-
-
-````
-
-
-
-uvicorn app.main:app --reload
-
-
-
-```
-
-
-
-> **Aguarde o download dos modelos de IA no terminal.**
-
-
-
-### 4. Como usar
-
-
-
-1.  Acesse [http://localhost:8000](http://localhost:8000) no seu navegador.
-
-2.  Cole a URL do vídeo do YouTube no campo e clique em "Resumir".
-
-3.  Aguarde o processamento (o tempo pode variar dependendo do tamanho do vídeo). O resumo aparecerá na tela.
-
-
-
-> **Observação:** Todos os arquivos de áudio, transcrições e resumos são salvos na pasta `data/` para acesso posterior.
-
-
-
----
-
-
-
-## Solução de problemas
-
-
-
--   Verifique se o **ffmpeg** está instalado e adicionado ao seu PATH.
-
--   Para evitar o download repetido dos modelos, execute o projeto pelo menos uma vez com conexão à internet.
-
--   Se ocorrerem erros de dependência, certifique-se de que o ambiente virtual está ativado.
-
-
-
----
-
-
-
-## Autores
-
-
-
-**Ana Carla Xavier**
-
-
-
-Responsável pelo download e transcrição do áudio.
-
-
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnaCarlaXO) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ana-carla-xavier-de-oliveira-945895366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
-
-
-**José Carlos Candido**
-
-
-
-Responsável pelo front-end e processamento da transcrição.
-
-
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/josecarlosjccf) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jos%C3%A9-carlos-candido-73b723235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
-```
+└── .gitignore</code></pre>
+
+<hr>
+
+<h2>🚀 Como rodar o projeto</h2>
+<h3>1. Pré-requisitos</h3>
+<ul>
+  <li>Python 3.10+ instalado (<a href="https://www.python.org/downloads/">baixe aqui</a>)</li>
+  <li>ffmpeg instalado no sistema:</li>
+  <ul>
+    <li><b>Linux (Ubuntu/Debian):</b><br><code>sudo apt update && sudo apt install ffmpeg -y</code></li>
+    <li><b>Windows:</b> Baixe o <a href="https://ffmpeg.org/download.html">FFmpeg</a>, extraia e adicione a pasta <code>bin</code> ao PATH do sistema.</li>
+  </ul>
+</ul>
+
+<h3>2. Crie e ative um ambiente virtual</h3>
+<pre><code>python -m venv venv</code></pre>
+<p><b>Windows:</b> <code>venv\Scripts\activate</code><br>
+<b>Linux/Mac:</b> <code>source venv/bin/activate</code></p>
+
+<h3>3. Instale as dependências</h3>
+<pre><code>pip install -r requirements.txt</code></pre>
+
+<h3>4. Execute o ThinkTube</h3>
+<pre><code>uvicorn app.main:app --reload</code></pre>
+
+<p>Servidor disponível em <a href="http://localhost:8000">http://localhost:8000</a></p>
+
+<h3>5. Como usar</h3>
+<ol>
+  <li>Acesse <a href="http://localhost:8000">http://localhost:8000</a></li>
+  <li>Cole a URL de um vídeo do YouTube</li>
+  <li>Clique em "Resumir"</li>
+  <li>O resumo aparecerá na tela após o processamento</li>
+</ol>
+
+<blockquote>
+  <b>Observação:</b><br>
+  • O processamento pode ser demorado para vídeos longos.<br>
+  • Todos os áudios, transcrições e resumos ficam na pasta <code>data/</code>.
+</blockquote>
+
+<hr>
+
+<h2>🛠️ Dicas de uso</h2>
+<ul>
+  <li>Certifique-se de que o ffmpeg está instalado e no PATH.</li>
+  <li>Para não baixar os modelos novamente, rode pelo menos uma vez com internet.</li>
+  <li>Se houver erro de dependência, confira se está no ambiente virtual correto.</li>
+</ul>
+
+<hr>
+
+<h2>👥 Autores</h2>
+
+<p><b>Ana Carla Xavier</b><br>
+Responsável pelo download e transcrição de áudio.<br>
+<a href="https://github.com/AnaCarlaXO"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://www.linkedin.com/in/ana-carla-xavier-de-oliveira-945895366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
+
+<p><b>José Carlos Candido</b><br>
+Responsável pelo front-end e processamento da transcrição.<br>
+<a href="https://github.com/josecarlosjccf"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://www.linkedin.com/in/jos%C3%A9-carlos-candido-73b723235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
